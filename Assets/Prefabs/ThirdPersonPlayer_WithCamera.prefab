@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 7359676925453405793}
   - component: {fileID: 1608698225777953843}
   - component: {fileID: 6512811011212731531}
+  - component: {fileID: 6531127397721874288}
   m_Layer: 0
   m_Name: ThirdPersonPlayer_WithCamera
   m_TagString: Player
@@ -447,6 +448,44 @@ MonoBehaviour:
   painEffect: {fileID: 533730454786828092, guid: 0adb5f4ce41aa4642b726fcf4f5c06f5,
     type: 3}
   painTimer: 0
+--- !u!114 &6531127397721874288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359676925453405818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090cefebbae6c5d4eb2ce72c7b4db11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerToHit:
+    serializedVersion: 2
+    m_Bits: 64
+  raycaster: {fileID: 0}
+  rayLength: 5
+  CrosshairDot: {fileID: 0}
+  rayHit: 0
+  canInteract: 0
+  interactiveObject: {fileID: 0}
+  targetIsInteractive: 0
+  targetIsCollctable: 0
+  targetIsCarryable: 0
+  onInvItemTaken:
+    m_PersistentCalls:
+      m_Calls: []
+  interactablePromptsText: 0
+  intPromptTxt: {fileID: 0}
+  intMessage: 
+  collectablePromptsText: 0
+  collectPromptTxt: {fileID: 0}
+  collectMessage: 
+  carryablePromptsText: 0
+  carryPromptTxt: {fileID: 0}
+  carryMessage: 
+  dropMessage: 
+  carryPoint: {fileID: 0}
 --- !u!1001 &7425925226378538496
 PrefabInstance:
   m_ObjectHideFlags: 0

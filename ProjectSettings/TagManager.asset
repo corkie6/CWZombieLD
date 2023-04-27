@@ -8,6 +8,7 @@ TagManager:
   - LevelManager
   - Dimmer
   - EnemyStrong
+  - Collectable
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Collectable
   - 
   - 
   - 
