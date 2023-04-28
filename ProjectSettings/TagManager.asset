@@ -9,6 +9,8 @@ TagManager:
   - Dimmer
   - EnemyStrong
   - Collectable
+  - Interact
+  - Carryable
   layers:
   - Default
   - TransparentFX
