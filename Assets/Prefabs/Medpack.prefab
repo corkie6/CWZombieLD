@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 401715372205515890}
   - component: {fileID: 401715372205515893}
   - component: {fileID: 401715372205515892}
-  - component: {fileID: 401715372205515895}
   - component: {fileID: 401715372205515894}
+  - component: {fileID: 596000294420892542}
   m_Layer: 0
   m_Name: Medpack
   m_TagString: Untagged
@@ -85,19 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &401715372205515895
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401715372205515897}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.77, y: 0.73, z: 0.79}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &401715372205515894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,3 +98,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealAmount: 20
+--- !u!65 &596000294420892542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401715372205515897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24997711, y: 0.29709122, z: 0.23801136}
+  m_Center: {x: 0.001581192, y: -0.0072280318, z: -0.0012764931}

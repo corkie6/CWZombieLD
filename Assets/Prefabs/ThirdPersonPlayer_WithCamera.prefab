@@ -464,7 +464,6 @@ MonoBehaviour:
   layerToHit:
     serializedVersion: 2
     m_Bits: 64
-  raycaster: {fileID: 0}
   rayLength: 5
   CrosshairDot: {fileID: 0}
   rayHit: 0
@@ -476,6 +475,9 @@ MonoBehaviour:
   onInvItemTaken:
     m_PersistentCalls:
       m_Calls: []
+  interactOrPickUpKey: 0
+  dropKey: 0
+  useInventory: 0
   interactablePromptsText: 0
   intPromptTxt: {fileID: 0}
   intMessage: 
@@ -538,12 +540,12 @@ PrefabInstance:
     - target: {fileID: 617076559512774064, guid: a5054adc7be3a45b29b84f30e22f3e10,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.5496473
+      value: 1.5496471
       objectReference: {fileID: 0}
     - target: {fileID: 617076559512774064, guid: a5054adc7be3a45b29b84f30e22f3e10,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.6259477
+      value: 0.7295806
       objectReference: {fileID: 0}
     - target: {fileID: 617076559512774064, guid: a5054adc7be3a45b29b84f30e22f3e10,
         type: 3}
@@ -553,17 +555,17 @@ PrefabInstance:
     - target: {fileID: 617076559512774064, guid: a5054adc7be3a45b29b84f30e22f3e10,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.17236558
+      value: 0.17236562
       objectReference: {fileID: 0}
     - target: {fileID: 617076559512774064, guid: a5054adc7be3a45b29b84f30e22f3e10,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.18689486
+      value: -0.13507845
       objectReference: {fileID: 0}
     - target: {fileID: 5533626999344158684, guid: a5054adc7be3a45b29b84f30e22f3e10,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.563
+      value: 0.455
       objectReference: {fileID: 0}
     - target: {fileID: 8105311061537990634, guid: a5054adc7be3a45b29b84f30e22f3e10,
         type: 3}

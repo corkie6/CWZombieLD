@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4006435598558119739}
   - component: {fileID: 15318835922356382}
   - component: {fileID: 2869526541028998228}
-  - component: {fileID: 3464128543291525945}
+  - component: {fileID: 3841725380344821836}
+  - component: {fileID: 874492636346978238}
   m_Layer: 0
   m_Name: Closet1
   m_TagString: Untagged
@@ -86,7 +87,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3464128543291525945
+--- !u!64 &3841725380344821836
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382679048077778305}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3758573805739257388, guid: 7d78cf714a802cc4990ab03280e2aa00, type: 3}
+--- !u!65 &874492636346978238
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,8 +112,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1500562, y: 1.9333291, z: 0.49994966}
-  m_Center: {x: 0, y: 0.96666455, z: 0}
+  m_Size: {x: 1.1500562, y: 1.0396184, z: 0.52868235}
+  m_Center: {x: 0, y: 1.4135199, z: 0.014366329}
 --- !u!1001 &3464128542421251366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -179,6 +194,76 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3464128542421251366}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4382679048850131063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ed72b980e16aea43b565910b841aa33,
+    type: 3}
+  m_PrefabInstance: {fileID: 3464128542421251366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2129119782368326144
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382679048850131063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ad7f4570dda0684ba8dead2f5301ab4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7051317506178930837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382679048850131063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f3f5778b8f39949a7e04399f797b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: cc86770dc00816c418138fcd47a27b2c, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8111360704866044094}
+        m_TargetAssemblyTypeName: TriggerAnim, Assembly-CSharp
+        m_MethodName: PlayAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8111360704866044094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382679048850131063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3dc1ac557e48de48a6ed741ce84e836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingToAnimate: {fileID: 4382679048850131063}
+  animToPlay: {fileID: 2129119782368326144}
+  triggerName: Closet
+  onEndAnim: {fileID: 11400000, guid: 70cb79239d914234daf39cc53b624389, type: 2}
 --- !u!1001 &3464128542442667603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -264,3 +349,73 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3464128542442667603}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4382679048738505474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ed72b980e16aea43b565910b841aa33,
+    type: 3}
+  m_PrefabInstance: {fileID: 3464128542442667603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4430795281602616501
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382679048738505474}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d19d17b0ad5fae64687b87252042ccc5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1474165360532562873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382679048738505474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3dc1ac557e48de48a6ed741ce84e836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingToAnimate: {fileID: 4382679048738505474}
+  animToPlay: {fileID: 4430795281602616501}
+  triggerName: Closet
+  onEndAnim: {fileID: 11400000, guid: 70cb79239d914234daf39cc53b624389, type: 2}
+--- !u!114 &7024701100784467726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382679048738505474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f3f5778b8f39949a7e04399f797b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: cc86770dc00816c418138fcd47a27b2c, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1474165360532562873}
+        m_TargetAssemblyTypeName: TriggerAnim, Assembly-CSharp
+        m_MethodName: PlayAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

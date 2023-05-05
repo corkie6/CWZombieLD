@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 909471976281824292}
   - component: {fileID: 909471976281824291}
   - component: {fileID: 909471976281824290}
+  - component: {fileID: 8386973305907896054}
   m_Layer: 0
   m_Name: ZombieSpawnTrigger
   m_TagString: Untagged
@@ -30,6 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.56, y: 0.076, z: -12.89}
   m_LocalScale: {x: 1, y: 0.16801, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -53,6 +55,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -115,3 +118,17 @@ MonoBehaviour:
   SpawnPoint3: {fileID: 0}
   SpawnPoint4: {fileID: 0}
   Triggered: 0
+--- !u!114 &8386973305907896054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909471976281824289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5ca921a1d2f1a448adbb948ba163fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundToPlay: {fileID: 8300000, guid: 874fb983242874c4f884eaa624000dbc, type: 3}
+  isTriggered: 0
