@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Key 3
   m_EditorClassIdentifier: 
   g_name: Yard Key
-  g_sprite: {fileID: 21300000, guid: 2880abd4b77bc3646a5f49877d2fc5e2, type: 3}
+  g_sprite: {fileID: 21300000, guid: e92dad24fae95414287cd8151779ee55, type: 3}

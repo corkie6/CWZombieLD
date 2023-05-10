@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Key 7
   m_EditorClassIdentifier: 
   g_name: ??? Key
-  g_sprite: {fileID: 21300000, guid: 2880abd4b77bc3646a5f49877d2fc5e2, type: 3}
+  g_sprite: {fileID: 21300000, guid: d42b5a9bb02d0aa4e8ff4ad554855287, type: 3}

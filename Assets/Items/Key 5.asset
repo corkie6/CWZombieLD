@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Key 5
   m_EditorClassIdentifier: 
   g_name: Basement Key
-  g_sprite: {fileID: 21300000, guid: 2880abd4b77bc3646a5f49877d2fc5e2, type: 3}
+  g_sprite: {fileID: 21300000, guid: 37a355496b16cc948bf1a3ce39ab5346, type: 3}
